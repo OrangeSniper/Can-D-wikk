@@ -26,7 +26,7 @@ sprite_change_offset("tech", 0, 0);
 
 sprite_change_offset("jab", 64, 128);
 sprite_change_offset("dattack", 0, 0);
-sprite_change_offset("ftilt", 32, 64);
+sprite_change_offset("ftilt", 64, 128);
 sprite_change_offset("dtilt", 32, 64);
 sprite_change_offset("utilt", 32, 64);
 sprite_change_offset("nair", 0, 0);
@@ -37,15 +37,15 @@ sprite_change_offset("dair", 0, 0);
 sprite_change_offset("fstrong", 0, 0);
 sprite_change_offset("ustrong", 0, 0);
 sprite_change_offset("dstrong", 0, 0);
-sprite_change_offset("nspecial", 32, 64);
+sprite_change_offset("nspecial", 64, 128);
 sprite_change_offset("fspecial", 32, 64);
 sprite_change_offset("uspecial", 32, 64);
-sprite_change_offset("dspecial", 32, 64);
+sprite_change_offset("dspecial", 64, 128);
 sprite_change_offset("taunt", 32, 64);
 
 sprite_change_offset("plat", 0, 0);
 
-sprite_change_offset("nspecial_proj", 32, 64);
+sprite_change_offset("nspecial_proj", 64, 128);
 
 sprite_change_offset("mana_bar", 99, 99);
 
