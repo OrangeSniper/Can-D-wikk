@@ -33,7 +33,7 @@ set_window_value(AT_DATTACK, 2, AG_WINDOW_ANIM_FRAMES, 2);
 set_window_value(AT_DATTACK, 2, AG_WINDOW_ANIM_FRAME_START, 2);
 set_window_value(AT_DATTACK, 2, AG_WINDOW_HAS_SFX, 1);
 set_window_value(AT_DATTACK, 2, AG_WINDOW_SFX, asset_get("sfx_blow_weak1"));
-set_window_value(AT_DATTACK, 2, AG_WINDOW_SFX_FRAME, 3);
+set_window_value(AT_DATTACK, 2, AG_WINDOW_SFX_FRAME, 0);
 
 set_num_hitboxes(AT_DATTACK, 1);
 
