@@ -28,12 +28,12 @@ set_window_value(AT_DATTACK, 1, AG_WINDOW_CANCEL_TYPE, 0);
 set_window_value(AT_DATTACK, 1, AG_WINDOW_CANCEL_FRAME, 0);
 
 set_window_value(AT_DATTACK, 2, AG_WINDOW_TYPE, 0);
-set_window_value(AT_DATTACK, 2, AG_WINDOW_LENGTH, 15);
+set_window_value(AT_DATTACK, 2, AG_WINDOW_LENGTH, 8);
 set_window_value(AT_DATTACK, 2, AG_WINDOW_ANIM_FRAMES, 2);
 set_window_value(AT_DATTACK, 2, AG_WINDOW_ANIM_FRAME_START, 2);
 set_window_value(AT_DATTACK, 2, AG_WINDOW_HAS_SFX, 1);
-set_window_value(AT_DATTACK, 2, AG_WINDOW_SFX, asset_get("sfx_swipe_heavy2"));
-set_window_value(AT_DATTACK, 2, AG_WINDOW_SFX_FRAME, 1);
+set_window_value(AT_DATTACK, 2, AG_WINDOW_SFX, asset_get("sfx_blow_weak1"));
+set_window_value(AT_DATTACK, 2, AG_WINDOW_SFX_FRAME, 3);
 
 set_num_hitboxes(AT_DATTACK, 1);
 
