@@ -389,7 +389,7 @@ with phone{
 	 * put the version number and full date.
 	 */
 	
-	initPatch("1.0", "???");
+	initPatch("0.1", "Feb. 3 2021");
 	initPatchImage(player_id.spr_dash, -5, fa_center, 1, c_white, 1);
 	initPatchWords_ext("I'm coming for you!", fa_center, c_white, 0, 1);
 
