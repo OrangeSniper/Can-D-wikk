@@ -388,6 +388,8 @@ with phone{
 	 * "Patch" in the function calls, and instead of a name for the patch,
 	 * put the version number and full date.
 	 */
+	initPatch("0.2", "???");
+	initPatchWords("*changed hud and result sprites")
 	
 	initPatch("0.1", "Feb. 3 2021");
 	initPatchImage(player_id.spr_dash, -5, fa_center, 1, c_white, 1);
