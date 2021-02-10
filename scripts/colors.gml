@@ -82,4 +82,4 @@ set_color_profile_slot( 9, 3, 255, 255, 255 ); //wick
 */
 
 
-vman_skinkit_color_names = ["0", "1", "2"] //Names for each color slot. If empty, it disables recolor mode. well that's okay but it's a lil' disappointing
+vman_skinkit_color_names = ["body", "face", "aura", "wick"] //Names for each color slot. If empty, it disables recolor mode. well that's okay but it's a lil' disappointing

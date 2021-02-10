@@ -389,7 +389,12 @@ with phone{
 	 * put the version number and full date.
 	 */
 	initPatch("0.2", "???");
-	initPatchWords("*changed hud and result sprites")
+	//attacks
+	initPatchWords("*redid dspecial");
+	//other
+	initPatchWords("+added ai_init script");
+	//cosmetics
+	initPatchWords("*changed hud and result sprites");
 	
 	initPatch("0.1", "Feb. 3 2021");
 	initPatchImage(player_id.spr_dash, -5, fa_center, 1, c_white, 1);
