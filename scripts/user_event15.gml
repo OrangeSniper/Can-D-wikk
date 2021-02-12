@@ -394,7 +394,8 @@ with phone{
 	//other
 	initPatchWords("+added ai_init script");
 	//cosmetics
-	initPatchWords("*changed hud and result sprites");
+	initPatchWords("*changed hud and result sprites
+	*changed some attack smears");
 	
 	initPatch("0.1", "Feb. 3 2021");
 	initPatchImage(player_id.spr_dash, -5, fa_center, 1, c_white, 1);
