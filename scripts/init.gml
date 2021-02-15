@@ -105,5 +105,7 @@ miiverse_post = sprite_get("eeee");
 //burn stuff
 Ghost_time = 0;
 Ghost_Fire = false;
+//sprite stuff
+spr_entrance = sprite_get("entrance");
 //munophone
 user_event(14);

@@ -389,7 +389,10 @@ with phone{
 	 * put the version number and full date.
 	 */
 	initPatch("0.3", "???");
+	initPatchWords_ext("cosmetics", fa_center, c_red, 0, 0);
 	initPatchWords("+made entrance animation")
+	initPatchImage(other.spr_entrance, -5, fa_center, 1, c_white, 0);
+	initPatchWords("changed jab attack smears")
 	
 	initPatch("0.2", "Feb. 14 2021");
 	//attacks
