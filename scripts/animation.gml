@@ -5,3 +5,8 @@ switch (state){
     
     default: break;
 }
+
+if(state == PS_SPAWN) {
+    sprite_index = sprite_get("entrance");
+    image_index = (state_timer * .17/3) - (7+(player))
+}

@@ -53,3 +53,5 @@ sprite_change_offset("dspecial_unable", 64, 128);
 
 sprite_change_offset("fired_up", 64, 128);
 sprite_change_offset("fire", 64, 128);
+
+sprite_change_offset("entrance", 64, 128);

@@ -388,7 +388,10 @@ with phone{
 	 * "Patch" in the function calls, and instead of a name for the patch,
 	 * put the version number and full date.
 	 */
-	initPatch("0.2", "???");
+	initPatch("0.3", "???");
+	initPatchWords("+made entrance animation")
+	
+	initPatch("0.2", "Feb. 14 2021");
 	//attacks
 	initPatchWords("*redid dspecial");
 	//other
