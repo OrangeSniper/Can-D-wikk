@@ -1,4 +1,3 @@
-user_event(14);
 //update
 //burn functionallity
 if(attack == AT_NSPECIAL && (state == PS_ATTACK_AIR || state == PS_ATTACK_GROUND)) {

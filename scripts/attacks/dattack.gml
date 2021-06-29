@@ -74,4 +74,3 @@ set_hitbox_value(AT_DATTACK, 1, HG_TECHABLE, 0);
 set_hitbox_value(AT_DATTACK, 1, HG_FORCE_FLINCH, 0);
 set_hitbox_value(AT_DATTACK, 1, HG_FINAL_BASE_KNOCKBACK , 0);
 set_hitbox_value(AT_DATTACK, 1, HG_THROWS_ROCK, 0);
-

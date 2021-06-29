@@ -22,10 +22,10 @@ if (object_index == oPlayer && !array_equals(phone_offscreen, [])){
 				var x_ = x + phone_offscr_x_offset * spr_dir;
 				var y_ = y + phone_offscr_y_offset;
 				
-				var off_l = x_ < view_get_xview() - leeway;
-				var off_r = x_ > view_get_xview() + view_get_wview() + leeway;
-				var off_u = y_ < view_get_yview() - leeway;
-				var off_d = y_ > view_get_yview() + view_get_hview() + leeway;
+				var off_l = x_ < view_get_xview() - leeway; // WARN: Possible Desync. Consider using get_instance_x(asset_get("camera_obj")).
+				var off_r = x_ > view_get_xview() + view_get_wview() + leeway; // WARN: Possible Desync. Consider using get_instance_x(asset_get("camera_obj")).
+				var off_u = y_ < view_get_yview() - leeway; // WARN: Possible Desync. Consider using get_instance_y(asset_get("camera_obj")).
+				var off_d = y_ > view_get_yview() + view_get_hview() - 52 + leeway; // WARN: Possible Desync. Consider using get_instance_y(asset_get("camera_obj")).
 				
 				var margin = 34;
 				var idx = noone;
@@ -44,9 +44,9 @@ if (object_index == oPlayer && !array_equals(phone_offscreen, [])){
 				else if off_d idx = 6;
 				
 				if idx != noone{
-					draw_sprite_ext(other.spr_pho_offscreen, idx, clamp(x_ - view_get_xview(), margin, view_get_wview() - margin) - 33, clamp(y_ - view_get_yview(), margin, view_get_hview() - margin) - 33, 1, 1, 0, get_player_hud_color(player), 1);
+					draw_sprite_ext(other.spr_pho_offscreen, idx, clamp(x_ - view_get_xview(), margin, view_get_wview() - margin) - 32, clamp(y_ - view_get_yview(), margin, view_get_hview() - 52 - margin) - 32, 1, 1, 0, get_player_hud_color(player), 1); // WARN: Possible Desync. Consider using get_instance_y(asset_get("camera_obj")). // WARN: Possible Desync. Consider using get_instance_x(asset_get("camera_obj")).
 					with other shader_start();
-					draw_sprite_ext(phone_offscr_sprite, phone_offscr_index, clamp(x_ - view_get_xview(), margin, view_get_wview() - margin) - 33, clamp(y_ - view_get_yview(), margin, view_get_hview() - margin) - 33, 1, 1, 0, c_white, 1);
+					draw_sprite_ext(phone_offscr_sprite, phone_offscr_index, clamp(x_ - view_get_xview(), margin, view_get_wview() - margin) - 32, clamp(y_ - view_get_yview(), margin, view_get_hview() - 52 - margin) - 32, 1, 1, 0, c_white, 1); // WARN: Possible Desync. Consider using get_instance_y(asset_get("camera_obj")). // WARN: Possible Desync. Consider using get_instance_x(asset_get("camera_obj")).
 					with other shader_end();
 				}
 			}
@@ -105,8 +105,8 @@ if phone.state{
 		var curs_h = 0;
 		
 		with player_id.codec_handler.active_codecs[cursor].player_object{
-			var true_x = x - view_get_xview();
-			var true_y = y - view_get_yview();
+			var true_x = x - view_get_xview(); // WARN: Possible Desync. Consider using get_instance_x(asset_get("camera_obj")).
+			var true_y = y - view_get_yview(); // WARN: Possible Desync. Consider using get_instance_y(asset_get("camera_obj")).
 			curs_x = true_x - 40;
 			curs_y = true_y - char_height - 20;
 			curs_w = 80;
@@ -1283,22 +1283,3 @@ if alpha draw_text_ext_transformed_color(x1, y1, text, lineb, linew, scale, scal
 
 if array_bool return [string_width_ext(text, lineb, linew), string_height_ext(text, lineb, linew)];
 else return;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

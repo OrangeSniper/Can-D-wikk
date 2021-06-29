@@ -57,7 +57,7 @@ if phone_practice with phone{
 	
 	x = 10;
 	
-	// var scrolled_left = (view_get_xview() + view_get_wview() * 0.5) < (other.room_width / 2 - 4);
+	// var scrolled_left = (view_get_xview() + view_get_wview() * 0.5) < (other.room_width / 2 - 4); // WARN: Possible Desync. Consider using get_instance_x(asset_get("camera_obj")).
 	
 	// scrolled_left = true; // make it ALWAYS fade when lowered
 	
@@ -319,7 +319,8 @@ if phone_practice with phone{
 		switch(state){
 			
 			case 0: // Closed
-			
+				
+				image_index = 0;
 				if (other.state != 0 && (other.state != 5 || other.stage_id != noone) && should_open) setState(1);
 				break;
 			
@@ -360,7 +361,7 @@ if phone_practice with phone{
 		}
 		
 		else{
-			image_index = 0;
+			// image_index = 0;
 		}
 		
 		state_timer++;
