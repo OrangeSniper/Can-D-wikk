@@ -1,1 +1,0 @@
-Ghost_Fire = false;
